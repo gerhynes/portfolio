@@ -1,5 +1,7 @@
 @import "config";
 
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
 *,
 *::before,
 *::after {
@@ -13,7 +15,7 @@ body {
   background: $primary-color;
   color: #fff;
   height: 100%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   line-height: 1.5;
 }
 
