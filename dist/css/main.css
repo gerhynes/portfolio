@@ -68,6 +68,25 @@ main {
   main#welcome-section h1 {
     margin-top: 20vh; }
 
+#about {
+  height: 100vh;
+  padding-top: 4rem; }
+  #about .about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: "about-heading about-heading about-heading" "bio-img bio bio";
+    grid-template-columns: repeat(3, 1fr); }
+  #about .about-heading {
+    grid-area: "about-heading"; }
+  #about .bio-img {
+    grid-area: "bio-img";
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #eece1a; }
+  #about .bio {
+    grid-area: "bio";
+    font-size: 1.5rem; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
