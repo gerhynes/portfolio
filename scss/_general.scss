@@ -19,7 +19,8 @@ body {
 // Headings
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 400;
 
   &.lg-heading {
@@ -29,6 +30,14 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
   }
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 a {
@@ -156,7 +165,8 @@ main {
   height: 100vh;
   padding: 2rem;
 
-  .projects-heading {
+  .projects-heading-main,
+  .projects-heading-secondary {
     text-align: center;
   }
 

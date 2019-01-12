@@ -15,16 +15,25 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 400; }
   h1.lg-heading,
   h2.lg-heading,
-  h3.lg-heading {
+  h3.lg-heading,
+  h4.lg-heading {
     font-size: 6rem; }
   h1.sm-heading,
   h2.sm-heading,
-  h3.sm-heading {
+  h3.sm-heading,
+  h4.sm-heading {
     margin-bottom: 2rem; }
+
+h3 {
+  font-size: 1.6rem; }
+
+h4 {
+  font-size: 1.2rem; }
 
 a {
   color: #fff;
@@ -107,7 +116,8 @@ main {
   width: 100%;
   height: 100vh;
   padding: 2rem; }
-  #projects .projects-heading {
+  #projects .projects-heading-main,
+  #projects .projects-heading-secondary {
     text-align: center; }
   #projects .projects {
     display: grid;
