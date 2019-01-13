@@ -114,9 +114,9 @@ main {
 
 #projects {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem; }
-  #projects .projects-heading-main,
+  #projects .projects-heading,
   #projects .projects-heading-secondary {
     text-align: center; }
   #projects .projects {
@@ -124,6 +124,9 @@ main {
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr); }
     #projects .projects .card {
+      max-width: 400px;
+      margin: 0 auto 3rem auto;
+      margin-bottom: 3rem;
       background: #f7f7f7;
       color: #000; }
       #projects .projects .card-body {
@@ -142,7 +145,6 @@ main {
   display: inline-block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.5rem;
   text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #eece1a;
@@ -159,7 +161,20 @@ main {
 
 #contact {
   width: 100%;
-  height: calc(100vh - 60px); }
+  min-height: calc(100vh - 60px); }
+  #contact .contact-heading, #contact .contact-heading-secondary {
+    text-align: center; }
+  #contact .contact-icons {
+    text-align: center;
+    margin: 1rem; }
+    #contact .contact-icons i {
+      margin: 1rem;
+      padding: 2.5rem;
+      background: #919191;
+      border-radius: 50%; }
+      #contact .contact-icons i:hover {
+        color: #eece1a;
+        transition: all 0.5s ease-out; }
 
 #main-footer {
   height: 60px;
@@ -253,10 +268,6 @@ main {
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
-
-@media screen and (min-width: 1171px) {
-  #projects .projects {
-    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   #projects .projects {
