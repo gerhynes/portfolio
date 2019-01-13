@@ -175,13 +175,27 @@ main {
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
 
+    .card {
+      background: lighten($primary-color, 70);
+      color: #000;
+
+      &-body {
+        padding: 1rem;
+      }
+
+      &-title,
+      &-text {
+        padding-bottom: 0.5rem;
+      }
+    }
+
     img {
       width: 100%;
-      border: 3px solid #fff;
+      height: auto;
+      border: 2px solid #fff;
 
       &:hover {
         opacity: 0.5;
-        border-color: $secondary-color;
         @include easeOut;
       }
     }
@@ -190,7 +204,7 @@ main {
 
 // Button styles
 .btn {
-  display: block;
+  display: inline-block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.5rem;
