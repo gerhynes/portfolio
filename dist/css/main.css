@@ -64,6 +64,7 @@ header {
 
 main {
   padding: 4rem;
+  width: 100%;
   height: 100vh;
   text-align: center;
   z-index: 2; }
@@ -123,15 +124,15 @@ main {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, 1fr); }
-    #projects .projects .card {
+    #projects .projects .project-tile {
       max-width: 400px;
       margin: 0 auto 3rem auto;
       margin-bottom: 3rem;
       background: #f7f7f7;
       color: #000; }
-      #projects .projects .card-body {
+      #projects .projects .project-tile-body {
         padding: 1rem; }
-      #projects .projects .card-title, #projects .projects .card-text {
+      #projects .projects .project-tile-title, #projects .projects .project-tile-text {
         padding-bottom: 0.5rem; }
     #projects .projects img {
       width: 100%;
