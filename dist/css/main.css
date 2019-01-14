@@ -7,11 +7,10 @@
   padding: 0; }
 
 body {
-  background: #444;
-  color: #fff;
   height: 100%;
   font-family: "Josefin Sans", sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #444; }
 
 h1,
 h2,
@@ -51,6 +50,7 @@ header {
   width: 100%;
   height: 100vh;
   background: url(../img/home-image.jpeg);
+  background-attachment: fixed;
   background-size: cover;
   z-index: -1; }
   .bg-img::after {
@@ -63,6 +63,7 @@ header {
     background: rgba(68, 68, 68, 0.7); }
 
 main {
+  color: #fff;
   padding: 4rem;
   width: 100%;
   height: 100vh;
@@ -73,7 +74,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #d59541;
         transition: all 0.5s ease-out; }
   main#welcome-section h1 {
     margin-top: 20vh; }
@@ -94,7 +95,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: 3px solid #eece1a; }
+    border: 3px solid #d59541; }
   #about .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -109,9 +110,11 @@ main {
   #about .skill-3 {
     grid-area: skill-3; }
   #about .skill {
-    background: #373737;
+    background: #f7f7f7;
     padding: 1rem;
-    border-bottom: 5px solid #eece1a; }
+    border-bottom: 5px solid #d59541;
+    color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18); }
 
 #projects {
   width: 100%;
@@ -129,7 +132,7 @@ main {
       margin: 0 auto 3rem auto;
       margin-bottom: 3rem;
       background: #f7f7f7;
-      color: #000; }
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18); }
       #projects .projects .project-tile-body {
         padding: 1rem; }
       #projects .projects .project-tile-title, #projects .projects .project-tile-text {
@@ -148,12 +151,12 @@ main {
   border: 0;
   text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #d59541;
     color: set-text-color;
     transition: all 0.5s ease-out; }
 
 .btn-dark {
-  background: black;
+  background: #24292e;
   color: #fff; }
 
 .btn-light {
@@ -174,7 +177,7 @@ main {
       background: #919191;
       border-radius: 50%; }
       #contact .contact-icons i:hover {
-        color: #eece1a;
+        color: #d59541;
         transition: all 0.5s ease-out; }
 
 #main-footer {
@@ -240,7 +243,7 @@ main {
       height: 250px;
       background: url(../img/elmer-riggs.jpg);
       border-radius: 50%;
-      border: 3px solid #eece1a; }
+      border: 3px solid #d59541; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -256,7 +259,7 @@ main {
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #d59541; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }

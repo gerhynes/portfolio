@@ -9,11 +9,10 @@
 }
 
 body {
-  background: $primary-color;
-  color: set-text-color($primary-color);
   height: 100%;
   font-family: "Josefin Sans", sans-serif;
   line-height: 1.5;
+  color: $primary-color;
 }
 
 // Headings
@@ -60,6 +59,7 @@ header {
   width: 100%;
   height: 100vh;
   background: $home-image;
+  background-attachment: fixed;
   background-size: cover;
   z-index: -1;
 
@@ -75,6 +75,7 @@ header {
 }
 
 main {
+  color: set-text-color($primary-color);
   padding: 4rem;
   width: 100%;
   height: 100vh;
@@ -153,9 +154,11 @@ main {
   }
 
   .skill {
-    background: darken($primary-color, 5);
+    background: lighten($primary-color, 70);
     padding: 1rem;
     border-bottom: 5px solid $secondary-color;
+    color: $primary-color;
+    box-shadow: $box-shadow;
   }
 }
 
@@ -181,7 +184,7 @@ main {
       margin: 0 auto 3rem auto;
       margin-bottom: 3rem;
       background: lighten($primary-color, 70);
-      color: #000;
+      box-shadow: $box-shadow;
 
       &-body {
         padding: 1rem;
@@ -222,7 +225,7 @@ main {
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 50);
+  background: $github;
   color: #fff;
 }
 
