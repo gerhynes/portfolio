@@ -240,6 +240,7 @@ main {
   min-height: calc(100vh - 60px);
 
   .contact-heading {
+    margin: 2rem;
     text-align: center;
   }
 
@@ -254,10 +255,11 @@ main {
     i {
       margin: 1rem;
       padding: 2.5rem;
-      background: lighten($primary-color, 30);
+      background: lighten($primary-color, 50);
       border-radius: 50%;
 
       &:hover {
+        transform: scale(1.1);
         color: $secondary-color;
         @include easeOut();
       }

@@ -5,8 +5,16 @@
   z-index: 3;
   top: 35px;
   right: 35px;
+  background: lighten($primary-color, 50);
+  padding: 1.6rem;
+  border-radius: 50%;
+  box-shadow: $box-shadow;
   cursor: pointer;
   @include easeOut;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   .btn-line {
     width: 28px;
@@ -14,6 +22,10 @@
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
     @include easeOut;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   // Rotate into X with menu lines
