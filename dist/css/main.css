@@ -86,7 +86,7 @@ main {
   #about .about-info {
     display: grid;
     grid-gap: 30px;
-    grid-template-areas: "about-heading about-heading about-heading" "bioimage bio bio" "skills-heading skills-heading skills-heading" "skill-1 skill-2 skill-3";
+    grid-template-areas: "about-heading about-heading about-heading" "bioimage bio bio" "skills-heading skills-heading skills-heading" "skill-1 skill-1 icons-1" " icons-2 skill-2 skill-2" "skill-3 skill-3 icons-3";
     grid-template-columns: repeat(3, 1fr); }
   #about .about-heading {
     grid-area: about-heading;
@@ -115,6 +115,9 @@ main {
     border-bottom: 5px solid #d59541;
     color: #444;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18); }
+  #about .skill-icons {
+    display: flex;
+    justify-content: space-around; }
 
 #projects {
   width: 100%;
@@ -310,7 +313,7 @@ main {
       width: 150px;
       height: 150px; }
   #about .about-info {
-    grid-template-areas: "about-heading" "bioimage" "bio" "skills-heading" "skill-1" "skill-2" "skill-3";
+    grid-template-areas: "about-heading" "bioimage" "bio" "skills-heading" "icons-1" "skill-1" "icons-2" "skill-2" "icons-3" "skill-3";
     grid-template-columns: 1fr; }
     #about .about-info .bio-heading {
       text-align: center; }

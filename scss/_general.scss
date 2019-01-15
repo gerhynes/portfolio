@@ -114,7 +114,9 @@ main {
       "about-heading about-heading about-heading"
       "bioimage bio bio"
       "skills-heading skills-heading skills-heading"
-      "skill-1 skill-2 skill-3";
+      "skill-1 skill-1 icons-1"
+      " icons-2 skill-2 skill-2"
+      "skill-3 skill-3 icons-3";
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -159,6 +161,11 @@ main {
     border-bottom: 5px solid $secondary-color;
     color: $primary-color;
     box-shadow: $box-shadow;
+  }
+
+  .skill-icons {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
