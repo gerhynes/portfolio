@@ -117,7 +117,9 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18); }
   #about .skill-icons {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem; }
 
 #projects {
   width: 100%;
