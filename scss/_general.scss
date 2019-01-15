@@ -183,7 +183,7 @@ main {
       max-width: 400px;
       margin: 0 auto 3rem auto;
       margin-bottom: 3rem;
-      background: lighten($primary-color, 70);
+      background: $grey100;
       box-shadow: $box-shadow;
 
       &-body {
@@ -215,6 +215,7 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   text-align: center;
+  color: #fff;
 
   &:hover {
     background: $secondary-color;
@@ -226,13 +227,11 @@ main {
 .btn-dark {
   @extend .btn;
   background: $github;
-  color: #fff;
 }
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
-  color: #333;
+  background: $tertiary-color;
 }
 
 #contact {
@@ -270,7 +269,7 @@ main {
 #main-footer {
   height: 60px;
   padding: 1rem;
-  background: darken($primary-color, 10);
+  background: $grey900;
   color: set-text-color($primary-color);
   text-align: center;
 }
