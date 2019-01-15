@@ -4,6 +4,9 @@ const menu = document.querySelector(".menu");
 const menuBranding = document.querySelector(".menu-branding");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
+const btnLine = document.querySelectorAll(".btn-line");
+const about = document.querySelector("#about");
+const topOfAbout = about.offsetTop;
 
 // Set initial state of menu
 let showMenu = false;
@@ -31,3 +34,13 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+function changeMenuColor() {
+  if (window.scrollY >= topOfAbout) {
+    btnLine.forEach(line => line.classList.add("dark"));
+  } else {
+    btnLine.forEach(line => line.classList.remove("dark"));
+  }
+}
+
+window.addEventListener("scroll", changeMenuColor);

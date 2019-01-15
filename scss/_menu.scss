@@ -5,10 +5,6 @@
   z-index: 3;
   top: 35px;
   right: 35px;
-  background: lighten($primary-color, 50);
-  padding: 1.6rem;
-  border-radius: 50%;
-  box-shadow: $box-shadow;
   cursor: pointer;
   @include easeOut;
 
@@ -20,11 +16,15 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: set-text-color($primary-color);
+    background: #fff;
     @include easeOut;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &.dark {
+      background: $grey1000;
     }
   }
 

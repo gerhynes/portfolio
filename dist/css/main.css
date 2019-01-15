@@ -193,10 +193,6 @@ main {
   z-index: 3;
   top: 35px;
   right: 35px;
-  background: #c4c4c4;
-  padding: 1.6rem;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn:hover {
@@ -209,6 +205,8 @@ main {
     transition: all 0.5s ease-out; }
     .menu-btn .btn-line:last-child {
       margin-bottom: 0; }
+    .menu-btn .btn-line.dark {
+      background: #21252a; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
