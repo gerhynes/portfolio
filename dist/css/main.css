@@ -194,9 +194,9 @@ main {
   text-align: center; }
 
 #navbar {
-  position: absolute;
-  top: 0;
-  right: 0; }
+  position: fixed;
+  width: 100%;
+  height: auto; }
   #navbar a.skip-main {
     left: -999px;
     position: absolute;

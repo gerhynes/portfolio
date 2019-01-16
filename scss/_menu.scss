@@ -1,7 +1,7 @@
 #navbar {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: fixed;
+  width: 100%;
+  height: auto;
 
   // Skip to main link
   a.skip-main {
