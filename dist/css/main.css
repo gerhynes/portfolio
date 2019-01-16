@@ -193,6 +193,34 @@ main {
   color: #fff;
   text-align: center; }
 
+#navbar {
+  position: absolute;
+  top: 0;
+  right: 0; }
+  #navbar a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999; }
+    #navbar a.skip-main:focus, #navbar a.skip-main:active {
+      color: #fff;
+      background-color: #000;
+      left: auto;
+      top: auto;
+      width: 30%;
+      height: auto;
+      overflow: auto;
+      margin: 10px 35%;
+      padding: 5px;
+      border-radius: 15px;
+      border: 4px solid yellow;
+      text-align: center;
+      font-size: 1.2rem;
+      z-index: 999; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -200,8 +228,6 @@ main {
   right: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
-  .menu-btn:hover {
-    transform: scale(1.1); }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;

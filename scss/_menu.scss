@@ -1,3 +1,38 @@
+#navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  // Skip to main link
+  a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+
+    &:focus,
+    &:active {
+      color: #fff;
+      background-color: #000;
+      left: auto;
+      top: auto;
+      width: 30%;
+      height: auto;
+      overflow: auto;
+      margin: 10px 35%;
+      padding: 5px;
+      border-radius: 15px;
+      border: 4px solid yellow;
+      text-align: center;
+      font-size: 1.2rem;
+      z-index: 999;
+    }
+  }
+}
+
 // Menu button
 
 .menu-btn {
@@ -7,10 +42,6 @@
   right: 35px;
   cursor: pointer;
   @include easeOut;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 
   .btn-line {
     width: 28px;
