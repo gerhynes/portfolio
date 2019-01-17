@@ -161,6 +161,12 @@ main {
     border-bottom: 5px solid $secondary-color;
     color: $primary-color;
     box-shadow: $box-shadow;
+    border-radius: 5px;
+    @include easeOut;
+
+    &:hover {
+      box-shadow: $box-shadow-active;
+    }
   }
 
   .skill-icons {
@@ -194,6 +200,8 @@ main {
       margin-bottom: 3rem;
       background: $grey100;
       box-shadow: $box-shadow;
+      border-radius: 5px;
+      @include easeOut;
 
       &-body {
         padding: 1rem;
@@ -203,6 +211,10 @@ main {
       &-text {
         padding-bottom: 0.5rem;
       }
+
+      &:hover {
+        box-shadow: $box-shadow-active;
+      }
     }
 
     img {
@@ -211,7 +223,7 @@ main {
       border: 2px solid #fff;
 
       &:hover {
-        opacity: 0.5;
+        opacity: 0.8;
         @include easeOut;
       }
     }

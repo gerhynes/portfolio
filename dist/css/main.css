@@ -114,7 +114,11 @@ main {
     padding: 1rem;
     border-bottom: 5px solid #d59541;
     color: #444;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18); }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    transition: all 0.5s ease-out; }
+    #about .skill:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
   #about .skill-icons {
     display: flex;
     justify-content: space-around;
@@ -137,17 +141,21 @@ main {
       margin: 0 auto 3rem auto;
       margin-bottom: 3rem;
       background: #f8f9fa;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18); }
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+      border-radius: 5px;
+      transition: all 0.5s ease-out; }
       #projects .projects .project-tile-body {
         padding: 1rem; }
       #projects .projects .project-tile-title, #projects .projects .project-tile-text {
         padding-bottom: 0.5rem; }
+      #projects .projects .project-tile:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
     #projects .projects img {
       width: 100%;
       height: auto;
       border: 2px solid #fff; }
       #projects .projects img:hover {
-        opacity: 0.5;
+        opacity: 0.8;
         transition: all 0.5s ease-out; }
 
 .btn, .btn-dark, .btn-light {
