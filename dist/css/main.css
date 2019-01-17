@@ -132,6 +132,9 @@ main {
   #projects .projects-heading,
   #projects .projects-heading-secondary {
     text-align: center; }
+  #projects .heading-tertiary {
+    font-size: 1.7rem;
+    padding-bottom: 1.5rem; }
   #projects .projects {
     display: grid;
     grid-gap: 1rem;
@@ -152,8 +155,7 @@ main {
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
     #projects .projects img {
       width: 100%;
-      height: auto;
-      border: 2px solid #fff; }
+      height: auto; }
       #projects .projects img:hover {
         opacity: 0.8;
         transition: all 0.5s ease-out; }
