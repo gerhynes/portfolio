@@ -159,6 +159,8 @@ main {
       #projects .projects img:hover {
         opacity: 0.8;
         transition: all 0.5s ease-out; }
+  #projects .web-apps {
+    display: flex; }
 
 .btn, .btn-dark, .btn-light {
   display: inline-block;
