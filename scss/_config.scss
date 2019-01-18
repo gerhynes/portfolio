@@ -2,7 +2,9 @@
 $primary-color: #444;
 $secondary-color: #d59541;
 $tertiary-color: #2368a2;
-$github: #24292e;
+$tertiary-color-dark: #1a4971;
+$github: #12283a;
+$github-dark: #24292e;
 
 // Greys
 $grey1000: #21252a;
@@ -17,7 +19,7 @@ $grey200: #f1f3f5;
 $grey100: #f8f9fa;
 
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
-$box-shadow-active: 0 8px 16px rgba(0, 0, 0, 0.2);
+$box-shadow-active: 0 12px 24px rgba(0, 0, 0, 0.5);
 $show-home-image: true;
 $home-image: url(../img/home-image.jpeg);
 $background-opacity: 0.7;

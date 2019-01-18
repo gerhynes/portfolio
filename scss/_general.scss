@@ -225,11 +225,7 @@ main {
     img {
       width: 100%;
       height: auto;
-
-      &:hover {
-        opacity: 0.8;
-        @include easeOut;
-      }
+      border-radius: 5px 5px 0 0;
     }
   }
 
@@ -245,9 +241,9 @@ main {
   border: 0;
   text-align: center;
   color: #fff;
+  margin-bottom: 0.5rem;
 
   &:hover {
-    background: $secondary-color;
     color: set-text-color;
     @include easeOut;
   }
@@ -256,11 +252,19 @@ main {
 .btn-dark {
   @extend .btn;
   background: $github;
+
+  &:hover {
+    background: $github-dark;
+  }
 }
 
 .btn-light {
   @extend .btn;
   background: $tertiary-color;
+
+  &:hover {
+    background: $tertiary-color-dark;
+  }
 }
 
 #contact {
