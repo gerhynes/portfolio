@@ -138,7 +138,7 @@ main {
   }
 
   .skills-heading {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
     grid-area: skills-heading;
   }
@@ -175,49 +175,53 @@ main {
     align-items: center;
     padding: 1rem;
 
-    .skill-icon:hover {
-      transform: scale(1.1);
-      @include easeOut;
-    }
+    .skill-icon {
+      margin: 0.4rem;
 
-    .fa-html5 {
-      color: #dd4b25;
-    }
+      &.fa-html5 {
+        color: #dd4b25;
+      }
 
-    .fa-css3-alt {
-      color: #146eb0;
-    }
+      &.fa-css3-alt {
+        color: #146eb0;
+      }
 
-    .fa-js {
-      color: #e8d34d;
-    }
+      &.fa-js {
+        color: #e8d34d;
+      }
 
-    .fa-sass {
-      color: #cf649a;
-    }
+      &.fa-sass {
+        color: #cf649a;
+      }
 
-    .fa-node {
-      color: #79b461;
-    }
+      &.fa-node {
+        color: #79b461;
+      }
 
-    .fa-npm {
-      color: #cb3837;
-    }
+      &.fa-npm {
+        color: #cb3837;
+      }
 
-    .fa-database {
-      color: #363739;
-    }
+      &.fa-database {
+        color: #363739;
+      }
 
-    .fa-code-branch {
-      color: #413932;
-    }
+      &.fa-code-branch {
+        color: #413932;
+      }
 
-    .fa-github {
-      color: $github;
-    }
+      &.fa-github {
+        color: $github;
+      }
 
-    .fa-terminal {
-      color: #020204;
+      &.fa-terminal {
+        color: #020204;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        @include easeOut;
+      }
     }
   }
 }

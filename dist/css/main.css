@@ -100,7 +100,7 @@ main {
     grid-area: bio;
     font-size: 1.5rem; }
   #about .skills-heading {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
     grid-area: skills-heading; }
   #about .skill-1 {
@@ -124,29 +124,31 @@ main {
     justify-content: space-around;
     align-items: center;
     padding: 1rem; }
-    #about .skill-icons .skill-icon:hover {
-      transform: scale(1.1);
-      transition: all 0.5s ease-out; }
-    #about .skill-icons .fa-html5 {
-      color: #dd4b25; }
-    #about .skill-icons .fa-css3-alt {
-      color: #146eb0; }
-    #about .skill-icons .fa-js {
-      color: #e8d34d; }
-    #about .skill-icons .fa-sass {
-      color: #cf649a; }
-    #about .skill-icons .fa-node {
-      color: #79b461; }
-    #about .skill-icons .fa-npm {
-      color: #cb3837; }
-    #about .skill-icons .fa-database {
-      color: #363739; }
-    #about .skill-icons .fa-code-branch {
-      color: #413932; }
-    #about .skill-icons .fa-github {
-      color: #12283a; }
-    #about .skill-icons .fa-terminal {
-      color: #020204; }
+    #about .skill-icons .skill-icon {
+      margin: 0.4rem; }
+      #about .skill-icons .skill-icon.fa-html5 {
+        color: #dd4b25; }
+      #about .skill-icons .skill-icon.fa-css3-alt {
+        color: #146eb0; }
+      #about .skill-icons .skill-icon.fa-js {
+        color: #e8d34d; }
+      #about .skill-icons .skill-icon.fa-sass {
+        color: #cf649a; }
+      #about .skill-icons .skill-icon.fa-node {
+        color: #79b461; }
+      #about .skill-icons .skill-icon.fa-npm {
+        color: #cb3837; }
+      #about .skill-icons .skill-icon.fa-database {
+        color: #363739; }
+      #about .skill-icons .skill-icon.fa-code-branch {
+        color: #413932; }
+      #about .skill-icons .skill-icon.fa-github {
+        color: #12283a; }
+      #about .skill-icons .skill-icon.fa-terminal {
+        color: #020204; }
+      #about .skill-icons .skill-icon:hover {
+        transform: scale(1.1);
+        transition: all 0.5s ease-out; }
 
 #projects {
   width: 100%;
