@@ -50,10 +50,6 @@
     background: #fff;
     @include easeOut;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-
     &.dark {
       background: $grey1000;
     }

@@ -246,8 +246,6 @@ main {
     margin: 0 0 5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
-    .menu-btn .btn-line:last-child {
-      margin-bottom: 0; }
     .menu-btn .btn-line.dark {
       background: #21252a; }
   .menu-btn.close {

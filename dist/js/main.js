@@ -11,7 +11,9 @@ const topOfAbout = about.offsetTop;
 // Set initial state of menu
 let showMenu = false;
 
+// Add event listeners
 menuBtn.addEventListener("click", toggleMenu);
+navItems.forEach(item => item.addEventListener("click", toggleMenu));
 
 function toggleMenu() {
   if (!showMenu) {
