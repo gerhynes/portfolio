@@ -124,6 +124,29 @@ main {
     justify-content: space-around;
     align-items: center;
     padding: 1rem; }
+    #about .skill-icons .skill-icon:hover {
+      transform: scale(1.1);
+      transition: all 0.5s ease-out; }
+    #about .skill-icons .fa-html5 {
+      color: #dd4b25; }
+    #about .skill-icons .fa-css3-alt {
+      color: #146eb0; }
+    #about .skill-icons .fa-js {
+      color: #e8d34d; }
+    #about .skill-icons .fa-sass {
+      color: #cf649a; }
+    #about .skill-icons .fa-node {
+      color: #79b461; }
+    #about .skill-icons .fa-npm {
+      color: #cb3837; }
+    #about .skill-icons .fa-database {
+      color: #363739; }
+    #about .skill-icons .fa-code-branch {
+      color: #413932; }
+    #about .skill-icons .fa-github {
+      color: #12283a; }
+    #about .skill-icons .fa-terminal {
+      color: #020204; }
 
 #projects {
   width: 100%;
