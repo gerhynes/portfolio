@@ -257,6 +257,27 @@ main {
       border-radius: 5px;
       @include easeOut;
 
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0 0;
+      }
+
+      ul {
+        padding: 0.5rem;
+        list-style: none;
+
+        li::before {
+          content: "";
+          display: inline-block;
+          background: $grey600;
+          width: 0.75rem;
+          height: 0.75rem;
+          border-radius: 50%;
+          margin-right: 0.5rem;
+        }
+      }
+
       &-body {
         padding: 1rem;
       }
@@ -269,12 +290,6 @@ main {
       &:hover {
         box-shadow: $box-shadow-active;
       }
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px 5px 0 0;
     }
   }
 
