@@ -112,7 +112,7 @@ main {
   #about .skill {
     background: #f7f7f7;
     padding: 1rem;
-    border-bottom: 5px solid #d59541;
+    border-top: 5px solid #d59541;
     color: #444;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
     border-radius: 5px;
@@ -131,7 +131,7 @@ main {
       #about .skill-icons .skill-icon.fa-css3-alt {
         color: #146eb0; }
       #about .skill-icons .skill-icon.fa-js {
-        color: #e8d34d; }
+        color: #efd81d; }
       #about .skill-icons .skill-icon.fa-sass {
         color: #cf649a; }
       #about .skill-icons .skill-icon.fa-node {
@@ -141,11 +141,17 @@ main {
       #about .skill-icons .skill-icon.fa-database {
         color: #363739; }
       #about .skill-icons .skill-icon.fa-code-branch {
-        color: #413932; }
+        color: #fff;
+        background: #f64d27;
+        padding: 0.5rem;
+        border-radius: 5px; }
       #about .skill-icons .skill-icon.fa-github {
         color: #12283a; }
       #about .skill-icons .skill-icon.fa-terminal {
-        color: #020204; }
+        color: #fff;
+        background: #020204;
+        padding: 0.5rem;
+        border-radius: 5px; }
       #about .skill-icons .skill-icon:hover {
         transform: scale(1.1);
         transition: all 0.5s ease-out; }

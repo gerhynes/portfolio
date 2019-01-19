@@ -158,7 +158,7 @@ main {
   .skill {
     background: lighten($primary-color, 70);
     padding: 1rem;
-    border-bottom: 5px solid $secondary-color;
+    border-top: 5px solid $secondary-color;
     color: $primary-color;
     box-shadow: $box-shadow;
     border-radius: 5px;
@@ -187,7 +187,7 @@ main {
       }
 
       &.fa-js {
-        color: #e8d34d;
+        color: #efd81d;
       }
 
       &.fa-sass {
@@ -207,7 +207,10 @@ main {
       }
 
       &.fa-code-branch {
-        color: #413932;
+        color: #fff;
+        background: #f64d27;
+        padding: 0.5rem;
+        border-radius: 5px;
       }
 
       &.fa-github {
@@ -215,7 +218,10 @@ main {
       }
 
       &.fa-terminal {
-        color: #020204;
+        color: #fff;
+        background: #020204;
+        padding: 0.5rem;
+        border-radius: 5px;
       }
 
       &:hover {
