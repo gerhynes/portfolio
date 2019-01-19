@@ -22,6 +22,11 @@ h4 {
   h3.lg-heading,
   h4.lg-heading {
     font-size: 6rem; }
+  h1.md-heading,
+  h2.md-heading,
+  h3.md-heading,
+  h4.md-heading {
+    font-size: 4.5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading,
