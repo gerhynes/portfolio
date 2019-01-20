@@ -48,6 +48,11 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding: 0.5rem;
+  list-style: none;
+}
+
 header {
   position: fixed;
   z-index: 2;
@@ -115,13 +120,13 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
-      "about-heading about-heading about-heading"
-      "bioimage bio bio"
-      "skills-heading skills-heading skills-heading"
-      "skill-1 skill-1 icons-1"
-      " icons-2 skill-2 skill-2"
-      "skill-3 skill-3 icons-3";
-    grid-template-columns: repeat(3, 1fr);
+      "about-heading about-heading"
+      "bioimage bio"
+      "skills-heading skills-heading"
+      "skill-1 icons-1"
+      "icons-2 skill-2"
+      "skill-3 icons-3";
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .about-heading {
@@ -167,9 +172,29 @@ main {
     box-shadow: $box-shadow;
     border-radius: 5px;
     @include easeOut;
+    display: flex;
+    justify-content: center;
 
     &:hover {
       box-shadow: $box-shadow-active;
+    }
+
+    .skill-content {
+      width: 70%;
+      &-heading {
+        text-align: center;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+    p::before {
+      content: "";
+      display: inline-block;
+      background: $grey600;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      margin-right: 0.5rem;
     }
   }
 
@@ -273,19 +298,14 @@ main {
         border-radius: 5px 5px 0 0;
       }
 
-      ul {
-        padding: 0.5rem;
-        list-style: none;
-
-        li::before {
-          content: "";
-          display: inline-block;
-          background: $grey600;
-          width: 0.75rem;
-          height: 0.75rem;
-          border-radius: 50%;
-          margin-right: 0.5rem;
-        }
+      li::before {
+        content: "";
+        display: inline-block;
+        background: $grey600;
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+        margin-right: 0.5rem;
       }
 
       &-body {
