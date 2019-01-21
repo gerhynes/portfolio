@@ -258,11 +258,26 @@ main {
     #contact .contact-icons i {
       margin: 1rem;
       padding: 2.5rem;
-      background: #c4c4c4;
       border-radius: 50%; }
+      #contact .contact-icons i.fa-twitter {
+        background: #1da1f2; }
+        #contact .contact-icons i.fa-twitter:hover {
+          color: #1da1f2; }
+      #contact .contact-icons i.fa-linkedin {
+        background: #007bb5; }
+        #contact .contact-icons i.fa-linkedin:hover {
+          color: #007bb5; }
+      #contact .contact-icons i.fa-github {
+        background: #12283a; }
+        #contact .contact-icons i.fa-github:hover {
+          color: #12283a; }
+      #contact .contact-icons i.fa-envelope {
+        background: #ea4335; }
+        #contact .contact-icons i.fa-envelope:hover {
+          color: #ea4335; }
       #contact .contact-icons i:hover {
         transform: scale(1.1);
-        color: #d59541;
+        background: #e9ecee;
         transition: all 0.5s ease-out; }
 
 #main-footer {
