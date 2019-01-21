@@ -385,12 +385,43 @@ main {
     i {
       margin: 1rem;
       padding: 2.5rem;
-      background: lighten($primary-color, 50);
       border-radius: 50%;
+
+      &.fa-twitter {
+        background: #1da1f2;
+
+        &:hover {
+          color: #1da1f2;
+        }
+      }
+
+      &.fa-linkedin {
+        background: #007bb5;
+
+        &:hover {
+          color: #007bb5;
+        }
+      }
+
+      &.fa-github {
+        background: $github;
+
+        &:hover {
+          color: $github;
+        }
+      }
+
+      &.fa-envelope {
+        background: #ea4335;
+
+        &:hover {
+          color: #ea4335;
+        }
+      }
 
       &:hover {
         transform: scale(1.1);
-        color: $secondary-color;
+        background: $grey300;
         @include easeOut();
       }
     }
