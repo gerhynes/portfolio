@@ -3,10 +3,17 @@
   #projects .projects {
     // grid-template-columns: repeat(4, 1fr);
   }
+
+  #about .about-info .skill .skill-content {
+    width: 60%;
+  }
 }
 
 // Desktops and laptops
 @include mediaLg {
+  #about {
+    padding: 4rem;
+  }
   #projects .projects {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -51,23 +58,25 @@
     }
   }
 
-  #about .about-info {
-    // display: block;
-    grid-template-areas:
-      "about-heading"
-      "bioimage"
-      "bio"
-      "skills-heading"
-      "icons-1"
-      "skill-1"
-      "icons-2"
-      "skill-2"
-      "icons-3"
-      "skill-3";
-    grid-template-columns: 1fr;
+  #about {
+    .about-info {
+      // display: block;
+      grid-template-areas:
+        "about-heading"
+        "bioimage"
+        "bio"
+        "skills-heading"
+        "icons-1"
+        "skill-1"
+        "icons-2"
+        "skill-2"
+        "icons-3"
+        "skill-3";
+      grid-template-columns: 1fr;
 
-    .bio-heading {
-      text-align: center;
+      .bio-heading {
+        text-align: center;
+      }
     }
   }
 

@@ -114,7 +114,7 @@ main {
 #about {
   width: 100%;
   min-height: 100vh;
-  padding: 4rem;
+  padding: 2rem;
 
   .about-info {
     display: grid;
@@ -127,135 +127,135 @@ main {
       "icons-2 skill-2"
       "skill-3 icons-3";
     grid-template-columns: repeat(2, 1fr);
-  }
 
-  .about-heading {
-    grid-area: about-heading;
-    text-align: center;
-  }
-
-  .bio-img {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: 3px solid $secondary-color;
-  }
-
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-  }
-
-  .skills-heading {
-    font-size: 1.7rem;
-    text-align: center;
-    grid-area: skills-heading;
-  }
-
-  .skill-1 {
-    grid-area: skill-1;
-  }
-
-  .skill-2 {
-    grid-area: skill-2;
-  }
-
-  .skill-3 {
-    grid-area: skill-3;
-  }
-
-  .skill {
-    background: lighten($primary-color, 70);
-    padding: 1rem;
-    border-top: 5px solid $secondary-color;
-    color: $primary-color;
-    box-shadow: $box-shadow;
-    border-radius: 5px;
-    @include easeOut;
-    display: flex;
-    justify-content: center;
-
-    &:hover {
-      box-shadow: $box-shadow-active;
+    .about-heading {
+      grid-area: about-heading;
+      text-align: center;
     }
 
-    .skill-content {
-      width: 70%;
-      &-heading {
-        text-align: center;
-        padding-bottom: 0.5rem;
-      }
-    }
-
-    p::before {
-      content: "";
-      display: inline-block;
-      background: $grey600;
-      width: 0.75rem;
-      height: 0.75rem;
+    .bio-img {
+      grid-area: bioimage;
+      margin: auto;
       border-radius: 50%;
-      margin-right: 0.5rem;
+      border: 3px solid $secondary-color;
     }
-  }
 
-  .skill-icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
+    .bio {
+      grid-area: bio;
+      font-size: 1.5rem;
+    }
 
-    .skill-icon {
-      margin: 0.4rem;
+    .skills-heading {
+      font-size: 1.7rem;
+      text-align: center;
+      grid-area: skills-heading;
+    }
 
-      &.fa-html5 {
-        color: #dd4b25;
-      }
+    .skill-1 {
+      grid-area: skill-1;
+    }
 
-      &.fa-css3-alt {
-        color: #146eb0;
-      }
+    .skill-2 {
+      grid-area: skill-2;
+    }
 
-      &.fa-js {
-        color: #efd81d;
-      }
+    .skill-3 {
+      grid-area: skill-3;
+    }
 
-      &.fa-sass {
-        color: #cf649a;
-      }
-
-      &.fa-node {
-        color: #79b461;
-      }
-
-      &.fa-npm {
-        color: #cb3837;
-      }
-
-      &.fa-database {
-        color: #363739;
-      }
-
-      &.fa-code-branch {
-        color: #fff;
-        background: #f64d27;
-        padding: 0.5rem;
-        border-radius: 5px;
-      }
-
-      &.fa-github {
-        color: $github;
-      }
-
-      &.fa-terminal {
-        color: #fff;
-        background: #020204;
-        padding: 0.5rem;
-        border-radius: 5px;
-      }
+    .skill {
+      background: lighten($primary-color, 70);
+      padding: 1rem;
+      border-top: 5px solid $secondary-color;
+      color: $primary-color;
+      box-shadow: $box-shadow;
+      border-radius: 5px;
+      @include easeOut;
+      display: flex;
+      justify-content: center;
 
       &:hover {
-        transform: scale(1.1);
-        @include easeOut;
+        box-shadow: $box-shadow-active;
+      }
+
+      .skill-content {
+        width: 100%;
+        &-heading {
+          text-align: center;
+          padding-bottom: 0.5rem;
+        }
+      }
+
+      p::before {
+        content: "";
+        display: inline-block;
+        background: $grey600;
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .skill-icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem;
+
+      .skill-icon {
+        margin: 0.4rem;
+
+        &.fa-html5 {
+          color: #dd4b25;
+        }
+
+        &.fa-css3-alt {
+          color: #146eb0;
+        }
+
+        &.fa-js {
+          color: #efd81d;
+        }
+
+        &.fa-sass {
+          color: #cf649a;
+        }
+
+        &.fa-node {
+          color: #79b461;
+        }
+
+        &.fa-npm {
+          color: #cb3837;
+        }
+
+        &.fa-database {
+          color: #363739;
+        }
+
+        &.fa-code-branch {
+          color: #fff;
+          background: #f64d27;
+          padding: 0.5rem;
+          border-radius: 5px;
+        }
+
+        &.fa-github {
+          color: $github;
+        }
+
+        &.fa-terminal {
+          color: #fff;
+          background: #020204;
+          padding: 0.5rem;
+          border-radius: 5px;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          @include easeOut;
+        }
       }
     }
   }
