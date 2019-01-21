@@ -4,8 +4,12 @@
     // grid-template-columns: repeat(4, 1fr);
   }
 
-  #about .about-info .skill .skill-content {
-    width: 60%;
+  #about {
+    padding: 4rem;
+
+    .about-info .skill .skill-content {
+      width: 60%;
+    }
   }
 }
 
