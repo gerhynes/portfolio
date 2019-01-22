@@ -93,9 +93,9 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    float: none;
     width: 100%;
     min-height: 0;
+    @include easeOut;
 
     &.show {
       transform: translate3d(0, 0, 0);
@@ -103,20 +103,18 @@
   }
 
   &-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
     background: rgba(darken($primary-color, 5), 0.9);
+    height: 75vh;
+    font-size: 24px;
     list-style: none;
-    @include easeOut;
+    transform: translate3d(-100%, 0, 0);
   }
 
   // Branding side
   &-branding {
+    background: rgba($primary-color, 0.9);
     height: 25vh;
     transform: translate3d(100%, 0, 0);
-    background: rgba($primary-color, 0.9);
-    @include easeOut;
 
     .portrait {
       background: url(../img/elmer-riggs-small.jpg);
@@ -128,11 +126,11 @@
   }
 
   .nav-item {
-    transform: translate3d(600px, 0, 0);
+    transform: translate3d(-600px, 0, 0);
     @include easeOut;
 
     &.show {
-      // Slide in from right
+      // Slide in from left
       transform: translate3d(0, 0, 0);
     }
   }
