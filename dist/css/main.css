@@ -86,7 +86,7 @@ main {
         color: #d59541;
         transition: all 0.5s ease-out; }
   main#welcome-section h1 {
-    margin-top: 20vh; }
+    margin-top: 10vh; }
 
 #about {
   width: 100%;
@@ -95,8 +95,8 @@ main {
   #about .about-info {
     display: grid;
     grid-gap: 30px;
-    grid-template-areas: "about-heading about-heading" "bioimage bio" "skills-heading skills-heading" "skill-1 icons-1" "icons-2 skill-2" "skill-3 icons-3";
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-areas: "about-heading" "bioimage" "bio" "skills-heading" "icons-1" "skill-1" "icons-2" "skill-2" "icons-3" "skill-3";
+    grid-template-columns: 1fr; }
     #about .about-info .about-heading {
       grid-area: about-heading;
       text-align: center; }
@@ -191,9 +191,7 @@ main {
     font-size: 1.7rem;
     padding-bottom: 1.5rem; }
   #projects .projects {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr); }
+    display: block; }
     #projects .projects .project-tile {
       max-width: 400px;
       margin: 0 auto 3rem auto;
@@ -404,22 +402,11 @@ main {
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (min-width: 1171px) {
-  #about {
-    padding: 4rem; }
-    #about .about-info .skill .skill-content {
-      width: 60%; } }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  #about {
-    padding: 4rem; }
-  #projects .projects {
-    grid-template-columns: repeat(3, 1fr); } }
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) {
   #welcome-section {
     padding: 4rem 2rem; }
     #welcome-section .lg-heading {
+      margin-top: 20vh;
       line-height: 1;
       margin-bottom: 1rem; }
   ul.menu-nav,
@@ -442,15 +429,21 @@ main {
       width: 150px;
       height: 150px; }
   #about .about-info {
-    grid-template-areas: "about-heading" "bioimage" "bio" "skills-heading" "icons-1" "skill-1" "icons-2" "skill-2" "icons-3" "skill-3";
-    grid-template-columns: 1fr; }
-    #about .about-info .bio-heading {
-      text-align: center; }
+    grid-template-areas: "about-heading about-heading" "bioimage bio" "skills-heading skills-heading" "skill-1 icons-1" "icons-2 skill-2" "skill-3 icons-3";
+    grid-template-columns: repeat(2, 1fr); }
   #projects .projects {
+    display: grid;
+    grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 500px) {
-  #welcome-section h1 {
-    margin-top: 10vh; }
+@media screen and (min-width: 768px) {
+  #about {
+    padding: 4rem; }
   #projects .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (min-width: 1171px) {
+  #about {
+    padding: 4rem; }
+    #about .about-info .skill .skill-content {
+      width: 60%; } }

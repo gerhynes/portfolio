@@ -105,7 +105,7 @@ main {
   }
 
   &#welcome-section h1 {
-    margin-top: 20vh;
+    margin-top: 10vh;
   }
 }
 
@@ -120,13 +120,17 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
-      "about-heading about-heading"
-      "bioimage bio"
-      "skills-heading skills-heading"
-      "skill-1 icons-1"
-      "icons-2 skill-2"
-      "skill-3 icons-3";
-    grid-template-columns: repeat(2, 1fr);
+      "about-heading"
+      "bioimage"
+      "bio"
+      "skills-heading"
+      "icons-1"
+      "skill-1"
+      "icons-2"
+      "skill-2"
+      "icons-3"
+      "skill-3";
+    grid-template-columns: 1fr;
 
     .about-heading {
       grid-area: about-heading;
@@ -279,9 +283,7 @@ main {
   }
 
   .projects {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
+    display: block;
 
     .project-tile {
       max-width: 400px;

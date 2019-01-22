@@ -1,34 +1,10 @@
-// Widescreens
-@include mediaXL {
-  #projects .projects {
-    // grid-template-columns: repeat(4, 1fr);
-  }
-
-  #about {
-    padding: 4rem;
-
-    .about-info .skill .skill-content {
-      width: 60%;
-    }
-  }
-}
-
-// Desktops and laptops
-@include mediaLg {
-  #about {
-    padding: 4rem;
-  }
-  #projects .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 // Tablets and small laptops
-@include mediaMd {
+@include mediaSm {
   #welcome-section {
     padding: 4rem 2rem;
 
     .lg-heading {
+      margin-top: 20vh;
       line-height: 1;
       margin-bottom: 1rem;
     }
@@ -64,38 +40,45 @@
 
   #about {
     .about-info {
-      // display: block;
       grid-template-areas:
-        "about-heading"
-        "bioimage"
-        "bio"
-        "skills-heading"
-        "icons-1"
-        "skill-1"
-        "icons-2"
-        "skill-2"
-        "icons-3"
-        "skill-3";
-      grid-template-columns: 1fr;
-
-      .bio-heading {
-        text-align: center;
-      }
+        "about-heading about-heading"
+        "bioimage bio"
+        "skills-heading skills-heading"
+        "skill-1 icons-1"
+        "icons-2 skill-2"
+        "skill-3 icons-3";
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   #projects .projects {
+    display: grid;
+    grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-// Smartphones
-@include mediaSm {
-  #welcome-section h1 {
-    margin-top: 10vh;
+// Desktops and laptops
+@include mediaMd {
+  #about {
+    padding: 4rem;
+  }
+  #projects .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Widescreens
+@include mediaLg {
+  #projects .projects {
+    // grid-template-columns: repeat(4, 1fr);
   }
 
-  #projects .projects {
-    grid-template-columns: 1fr;
+  #about {
+    padding: 4rem;
+
+    .about-info .skill .skill-content {
+      width: 60%;
+    }
   }
 }
