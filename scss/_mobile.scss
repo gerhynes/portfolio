@@ -10,34 +10,6 @@
     }
   }
 
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
-
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
-  }
-
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0);
-
-    .portrait {
-      background: url(../img/elmer-riggs-small.jpg);
-      width: 150px;
-      height: 150px;
-    }
-  }
-
   #about {
     .about-info {
       grid-template-areas:
@@ -60,6 +32,37 @@
 
 // Desktops and laptops
 @include mediaMd {
+  .menu {
+    &-nav,
+    &-branding {
+      float: left;
+      width: 50%;
+      height: 100vh;
+      overflow: hidden;
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    &-nav {
+      transform: translate3d(0, -100%, 0);
+    }
+
+    &-branding {
+      transform: translate3d(0, 100%, 0);
+
+      .portrait {
+        width: 250px;
+        height: 250px;
+        background: url(../img/elmer-riggs.jpg);
+      }
+    }
+    .nav-item {
+      transform: translate3d(600px, 0, 0);
+    }
+  }
+
   #about {
     padding: 4rem;
   }

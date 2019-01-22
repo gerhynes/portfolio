@@ -350,27 +350,27 @@ main {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    float: left;
-    width: 50%;
-    height: 100vh;
-    overflow: hidden; }
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    .menu-branding.show, .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
   .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
     background: rgba(55, 55, 55, 0.9);
     list-style: none;
-    transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
-    .menu-nav.show {
-      transform: translate3d(0, 0, 0); }
   .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
     background: rgba(68, 68, 68, 0.9);
-    transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
-    .menu-branding.show {
-      transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url(../img/elmer-riggs.jpg);
+      background: url(../img/elmer-riggs-small.jpg);
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       border: 3px solid #d59541; }
   .menu .nav-item {
@@ -409,25 +409,6 @@ main {
       margin-top: 20vh;
       line-height: 1;
       margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url(../img/elmer-riggs-small.jpg);
-      width: 150px;
-      height: 150px; }
   #about .about-info {
     grid-template-areas: "about-heading about-heading" "bioimage bio" "skills-heading skills-heading" "skill-1 icons-1" "icons-2 skill-2" "skill-3 icons-3";
     grid-template-columns: repeat(2, 1fr); }
@@ -437,6 +418,23 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (min-width: 768px) {
+  .menu-nav, .menu-branding {
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+    .menu-nav.show, .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    transform: translate3d(0, -100%, 0); }
+  .menu-branding {
+    transform: translate3d(0, 100%, 0); }
+    .menu-branding .portrait {
+      width: 250px;
+      height: 250px;
+      background: url(../img/elmer-riggs.jpg); }
+  .menu .nav-item {
+    transform: translate3d(600px, 0, 0); }
   #about {
     padding: 4rem; }
   #projects .projects {
