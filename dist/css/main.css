@@ -73,7 +73,7 @@ header {
 
 main {
   color: #fff;
-  padding: 4rem;
+  padding: 4rem 2rem;
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -404,7 +404,7 @@ main {
 
 @media screen and (min-width: 576px) {
   #welcome-section {
-    padding: 4rem 2rem; }
+    padding: 4rem; }
     #welcome-section .lg-heading {
       margin-top: 20vh;
       line-height: 1;

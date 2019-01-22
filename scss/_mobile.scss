@@ -1,7 +1,7 @@
 // Tablets and small laptops
 @include mediaSm {
   #welcome-section {
-    padding: 4rem 2rem;
+    padding: 4rem;
 
     .lg-heading {
       margin-top: 20vh;
@@ -70,10 +70,6 @@
 
 // Widescreens
 @include mediaLg {
-  #projects .projects {
-    // grid-template-columns: repeat(4, 1fr);
-  }
-
   #about {
     padding: 4rem;
 
