@@ -363,10 +363,10 @@ main {
 
 .btn-light {
   @extend .btn;
-  background: $tertiary-color;
+  background: $button-color;
 
   &:hover {
-    background: $tertiary-color-dark;
+    background: $button-color-active;
   }
 }
 
