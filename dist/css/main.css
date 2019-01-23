@@ -4,8 +4,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  border: 1px solid red; }
+  padding: 0; }
 
 body {
   height: 100%;
@@ -110,6 +109,7 @@ main {
       grid-area: bio;
       font-size: 1.5rem; }
     #about .about-info .skills-heading {
+      margin-top: 1rem;
       font-size: 1.7rem;
       text-align: center;
       grid-area: skills-heading; }
@@ -187,7 +187,8 @@ main {
   padding: 2rem; }
   #projects .projects-heading,
   #projects .projects-heading-secondary {
-    text-align: center; }
+    text-align: center;
+    margin-top: 1rem; }
   #projects .heading-tertiary {
     font-size: 1.7rem;
     padding-bottom: 1.5rem; }
@@ -408,13 +409,8 @@ main {
       margin-top: 20vh;
       line-height: 1;
       margin-bottom: 1rem; }
-  #about .about-info {
-    grid-template-areas: "about-heading about-heading" "bioimage bio" "skills-heading skills-heading" "skill-1 icons-1" "icons-2 skill-2" "skill-3 icons-3";
-    grid-template-columns: repeat(2, 1fr); }
-  #projects .projects {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(2, 1fr); } }
+  #projects .projects.web-apps {
+    display: flex; } }
 
 @media screen and (min-width: 768px) {
   .menu-nav, .menu-branding {
@@ -439,11 +435,18 @@ main {
     margin-bottom: 0; }
   #about {
     padding: 4rem; }
+    #about .about-info {
+      grid-template-areas: "about-heading about-heading" "bioimage bio" "skills-heading skills-heading" "skill-1 icons-1" "icons-2 skill-2" "skill-3 icons-3";
+      grid-template-columns: repeat(2, 1fr); }
   #projects .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (min-width: 1171px) {
   #about {
     padding: 4rem; }
     #about .about-info .skill .skill-content {
-      width: 60%; } }
+      width: 60%; }
+  #projects .projects {
+    grid-template-columns: repeat(3, 1fr); } }

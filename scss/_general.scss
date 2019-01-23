@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 body {
@@ -151,6 +151,7 @@ main {
     }
 
     .skills-heading {
+      margin-top: 1rem;
       font-size: 1.7rem;
       text-align: center;
       grid-area: skills-heading;
@@ -276,6 +277,7 @@ main {
   .projects-heading,
   .projects-heading-secondary {
     text-align: center;
+    margin-top: 1rem;
   }
 
   .heading-tertiary {

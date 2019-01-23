@@ -10,23 +10,8 @@
     }
   }
 
-  #about {
-    .about-info {
-      grid-template-areas:
-        "about-heading about-heading"
-        "bioimage bio"
-        "skills-heading skills-heading"
-        "skill-1 icons-1"
-        "icons-2 skill-2"
-        "skill-3 icons-3";
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  #projects .projects {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+  #projects .projects.web-apps {
+    display: flex;
   }
 }
 
@@ -70,9 +55,21 @@
 
   #about {
     padding: 4rem;
+    .about-info {
+      grid-template-areas:
+        "about-heading about-heading"
+        "bioimage bio"
+        "skills-heading skills-heading"
+        "skill-1 icons-1"
+        "icons-2 skill-2"
+        "skill-3 icons-3";
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   #projects .projects {
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -84,5 +81,8 @@
     .about-info .skill .skill-content {
       width: 60%;
     }
+  }
+  #projects .projects {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
