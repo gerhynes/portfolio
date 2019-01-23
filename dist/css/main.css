@@ -4,7 +4,8 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border: 1px solid red; }
 
 body {
   height: 100%;
@@ -433,6 +434,9 @@ main {
       background: url(../img/elmer-riggs.jpg); }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0); }
+  #welcome-section .lg-heading {
+    line-height: 1.5;
+    margin-bottom: 0; }
   #about {
     padding: 4rem; }
   #projects .projects {
