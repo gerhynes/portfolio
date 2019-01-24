@@ -45,27 +45,27 @@
   </header>
   <div class="bg-img"></div>
   <section id="landing">
-    <main id="welcome-section">
-      <h1 class="lg-heading">Hi, I'm Gerard</h1>
-      <h2 class="sm-heading">I'm a self-taught Web Developer and Programmer</h2>
-      <div class="icons">
-        <a href="https://twitter.com/Gerard_K_Hynes" target="_blank">
+    <main class="landing" id="welcome-section">
+      <h1 class="landing__heading heading--lg">Hi, I'm Gerard</h1>
+      <h2 class="landing__heading--sm heading--sm">I'm a self-taught Web Developer and Programmer</h2>
+      <div class="landing__icons">
+        <a href="https://twitter.com/Gerard_K_Hynes" target="_blank" class="landing__link">
           <i class="fab fa-twitter fa-2x"></i>
         </a>
-        <a href="https://www.linkedin.com/in/hynesgk/" target="_blank">
+        <a href="https://www.linkedin.com/in/hynesgk/" target="_blank" class="landing__link">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
-        <a href="https://github.com/GK-Hynes" id="profile-link" target="_blank">
+        <a href="https://github.com/GK-Hynes" id="profile-link" target="_blank" class="landing__link">
           <i class="fab fa-github fa-2x"></i>
         </a>
       </div>
     </main>
   </section>
-  <section id="about">
-    <div class="about-info">
-      <h2 class="about-heading md-heading">About Me</h2>
-      <img class="bio-img" src="img/elmer-riggs.jpg" alt="Photo of Elmer Riggs">
-      <div class="bio">
+  <section id="about" class="about">
+    <div class="about__info">
+      <h2 class="about__heading heading--md">About Me</h2>
+      <img class="about__bio-img" src="img/elmer-riggs.jpg" alt="Photo of Elmer Riggs">
+      <div class="about__bio">
         <p>I'm a self-taught web-developer from Ireland.</p>
         <p>After using web apps as a teacher and digital marketer, I
           wanted to build my own. </p>
@@ -74,8 +74,8 @@
       </div>
       <h3 class="skills-heading">My Skills</h3>
       <div class="skill skill-1">
-        <div class="skill-content">
-          <h4 class="skill-content-heading">Front End</h4>
+        <div class="skill__content">
+          <h4 class="skill__content-heading">Front End</h4>
           <ul>
             <li>
               <p>Semantic HTML5 for accessibility and SEO</p>
@@ -107,8 +107,8 @@
         <i class="skill-icon fas fa-database fa-3x"></i>
       </div>
       <div class="skill skill-2">
-        <div class="skill-content">
-          <h4 class="skill-content-heading">Back End</h4>
+        <div class="skill__content">
+          <h4 class="skill__content-heading">Back End</h4>
           <ul>
             <li>
               <p>REST APIs with Node.js and Express</p>
@@ -126,8 +126,8 @@
         </div>
       </div>
       <div class="skill skill-3">
-        <div class="skill-content">
-          <h4 class="skill-content-heading">Tools</h4>
+        <div class="skill__content">
+          <h4 class="skill__content-heading">Tools</h4>
           <ul>
             <li>
               <p>Git for version control and feature branching</p>
@@ -149,240 +149,239 @@
     </div>
 
   </section>
-  <section id="projects">
-    <h2 class="md-heading projects-heading">My Work</h2>
-    <div class="projects-gallery">
-      <div class="full-stack-projects">
-        <h4 class="projects-heading heading-tertiary">Full Stack Web Apps</h4>
-        <div class="projects web-apps">
+  <section class="projects-gallery" id="projects">
+    <h2 class="heading--md projects-heading">My Work</h2>
 
-          <div class="project-tile">
-            <div class="project-tile-top">
-              <a href="https://castlepedia.herokuapp.com/" target="_blank">
-                <img src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1547395838/Screenshot_2019-01-13_Castlepedia_swjzsj.jpg"
-                  alt="Castlepedia Project">
-              </a>
-            </div>
-            <div class="project-tile-body">
-              <h4 class="project-tile-title">Castlepedia</h4>
-              <p class="project-tile-text">A Yelp-style site for sharing reviews of historical sites.</p>
-              <ul>
-                <li>Node.js and Express backend</li>
-                <li>MongoDB database</li>
-                <li>User authentication with Passport</li>
-                <li>Image uploading with Cloudinary</li>
-                <li>Password resetting via email with Nodemailer</li>
-                <li>Google Maps and Google Places APIs</li>
-                <li>Styled with Bootstrap 4</li>
-              </ul>
-              <a href="https://castlepedia.herokuapp.com/" class="btn-light" target="_blank">View project <i class="fas fa-external-link-alt"></i></a>
-              <a href="https://github.com/GK-Hynes/castlepedia" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
-            </div>
+    <div class="full-stack-projects">
+      <h4 class="projects-heading heading-tertiary">Full Stack Web Apps</h4>
+      <div class="projects web-apps">
+
+        <div class="project-tile">
+          <div class="project-tile__top">
+            <a href="https://castlepedia.herokuapp.com/" target="_blank">
+              <img class="project-tile__img" src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1547395838/Screenshot_2019-01-13_Castlepedia_swjzsj.jpg"
+                alt="Castlepedia Project">
+            </a>
           </div>
-
+          <div class="project-tile__body">
+            <h4 class="project-tile__title">Castlepedia</h4>
+            <p class="project-tile__text">A Yelp-style site for sharing reviews of historical sites.</p>
+            <ul class="project-tile__list">
+              <li>Node.js and Express backend</li>
+              <li>MongoDB database</li>
+              <li>User authentication with Passport</li>
+              <li>Image uploading with Cloudinary</li>
+              <li>Password resetting via email with Nodemailer</li>
+              <li>Google Maps and Google Places APIs</li>
+              <li>Styled with Bootstrap 4</li>
+            </ul>
+            <a href="https://castlepedia.herokuapp.com/" class="btn-light" target="_blank">View project <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/GK-Hynes/castlepedia" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
+          </div>
         </div>
-      </div>
 
-      <div class="javascript-and-api-projects">
-        <h4 class="projects-heading heading-tertiary">JavaScript and APIs</h4>
-        <div class="projects">
-
-          <div class="project-tile">
-            <div class="project-tile-top">
-              <a href="https://gk-hynes.github.io/d3-data-dashboard/" target="_blank">
-                <img src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1544967545/Screenshot_2018-12-16_D3_Data_Dashboard_n1j218.png"
-                  alt="D3.js Data Dashboard">
-              </a>
-            </div>
-            <div class="project-tile-body">
-              <h4 class="project-tile-title">D3.js Data Dashboard</h4>
-              <p class="project-tile-text">A dashboard showing CO2 emissions per country, built in D3.js.</p>
-              <ul>
-                <li>Interactive map using GeoJSON</li>
-                <li>Dynamic graphs</li>
-                <li>Custom tooltips</li>
-                <li>Data from UNData</li>
-              </ul>
-              <a href="https://gk-hynes.github.io/d3-data-dashboard/" class="btn-light" target="_blank">View project <i
-                  class="fas fa-external-link-alt"></i></a>
-              <a href="https://github.com/GK-Hynes/d3-data-dashboard" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
-            </div>
-          </div>
-
-          <div class="project-tile">
-            <div class="project-tile-top">
-              <a href="https://gk-hynes.github.io/weatherjs/" target="_blank">
-                <img src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1531174245/Screenshot_2018-07-09_WeatherJS_pzszlx.png"
-                  alt="Weather App">
-              </a>
-            </div>
-            <div class="project-tile-body">
-              <h4 class="project-tile-title">Weather App</h4>
-              <p class="project-tile-text">An interactive weather app using the OpenWeatherMap API.</p>
-              <ul>
-                <li>Uses Fetch API</li>
-                <li>Uses ES6 classes and async functions</li>
-                <li>Location saved to LocalStorage</li>
-                <li>Custom Bootswatch theme</li>
-              </ul>
-              <a href="https://gk-hynes.github.io/weatherjs/" class="btn-light" target="_blank">View project <i class="fas fa-external-link-alt"></i></a>
-              <a href="https://github.com/GK-Hynes/weatherjs" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
-            </div>
-          </div>
-
-          <div class="project-tile">
-            <div class="project-tile-top">
-              <a href="https://gk-hynes.github.io/github-finder/" target="_blank">
-                <img src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1544967629/Screenshot_2018-12-16_GitHub_Finder_ctbpda.png"
-                  alt="Github Profile Finder">
-              </a>
-            </div>
-            <div class="project-tile-body">
-              <h4 class="project-tile-title">Github Profile Finder</h4>
-              <p class="project-tile-text">An app that uses the Github API to fetch and display user profiles and repo
-                information.</p>
-              <ul>
-                <li>Organized, modular code</li>
-                <li>Uses ES2017 (Async + Await)</li>
-                <li>Uses Fetch API</li>
-                <li>Styled with Bootstrap 4</li>
-              </ul>
-              <a href="https://gk-hynes.github.io/github-finder/" class="btn-light" target="_blank">View project <i
-                  class="fas fa-external-link-alt"></i></a>
-              <a href="https://github.com/GK-Hynes/github-finder" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
-            </div>
-          </div>
-
-          <div class="project-tile">
-            <div class="project-tile-top">
-              <a href="https://gk-hynes.github.io/tracalorie/" target="_blank">
-                <img src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1534617447/Screenshot_2018-08-18_Tracalorie_Meal_Calorie_Tracker_zybwy5.png"
-                  alt="Tracalorie App">
-              </a>
-            </div>
-            <div class="project-tile-body">
-              <h4 class="project-tile-title">Tracalorie</h4>
-              <p class="project-tile-text">A calorie and meal tracking app.</p>
-              <ul>
-                <li>Uses ES6 classes</li>
-                <li>Uses the module pattern</li>
-                <li>Data saved to LocalStorage</li>
-                <li>Styled with Materialize CSS</li>
-              </ul>
-              <a href="https://gk-hynes.github.io/tracalorie/" class="btn-light" target="_blank">View project <i class="fas fa-external-link-alt"></i></a>
-              <a href="https://github.com/GK-Hynes/tracalorie" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="web-design-projects">
-        <h4 class="projects-heading heading-tertiary">Responsive Web Design</h4>
-        <div class="projects">
-
-          <div class="project-tile">
-            <div class="project-tile-top">
-              <a href="https://gk-hynes.github.io/fcc-landing-page/" target="_blank">
-                <img src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1547762584/Screenshot_2019-01-17_K2_Language_School_bwtfw2.png"
-                  alt="K2 Language School">
-              </a>
-            </div>
-            <div class="project-tile-body">
-              <h4 class="project-tile-title">K2 Language School</h4>
-              <p class="project-tile-text">A landing page for a fictional Dublin-based language school.</p>
-              <ul>
-                <li>Responsive Flexbox layout</li>
-                <li>Ebedded video and map</li>
-              </ul>
-              <a href="https://gk-hynes.github.io/fcc-landing-page/" class="btn-light" target="_blank">View project <i
-                  class="fas fa-external-link-alt"></i></a>
-              <a href="https://github.com/GK-Hynes/fcc-landing-page" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-tile">
-            <div class="project-tile-top">
-              <a href="https://gk-hynes.github.io/technical-documentation/" target="_blank">
-                <img src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1547762620/Screenshot_2019-01-17_CSS_Technical_Docs_nnhlqh.png"
-                  alt="CSS Technical Documentation">
-              </a>
-            </div>
-            <div class="project-tile-body">
-              <h4 class="project-tile-title">CSS Technical Documentation</h4>
-              <p class="project-tile-text">A page created to practise and explain the box model and CSS positioning.</p>
-              <ul>
-                <li>Responsive design without floats, Flexbox or Grid</li>
-              </ul>
-              <a href="https://gk-hynes.github.io/technical-documentation/" class="btn-light" target="_blank">View
-                project <i class="fas fa-external-link-alt"></i></a>
-              <a href="https://github.com/GK-Hynes/technical-documentation" class="btn-dark" target="_blank">Github <i
-                  class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-tile">
-            <div class="project-tile-top">
-              <a href="https://gk-hynes.github.io/fcc-survey-form/" target="_blank">
-                <img src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1547762602/Screenshot_2019-01-17_freeCodeCamp_Survey_Form_tb2hly.png"
-                  alt="Material Design Survey Form">
-              </a>
-            </div>
-            <div class="project-tile-body">
-              <h4 class="project-tile-title">Material Design Survey Form</h4>
-              <p class="project-tile-text">A responsive form based off Material Design principles.</p>
-              <ul>
-                <li>Accessible custom inputs and styles</li>
-                <li>No CSS frameworks</li>
-              </ul>
-              <a href="https://gk-hynes.github.io/fcc-survey-form/" class="btn-light" target="_blank">View
-                project <i class="fas fa-external-link-alt"></i></a>
-              <a href="https://github.com/GK-Hynes/fcc-survey-form" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-tile">
-            <div class="project-tile-top">
-              <a href="https://julieandgerard.com/" target="_blank">
-                <img src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1547396210/Screenshot_2019-01-13_Julie_and_Gerard_s_Wedding_mboz2u.png"
-                  alt="Wedding Site">
-              </a>
-            </div>
-            <div class="project-tile-body">
-              <h4 class="project-tile-title">Wedding Site</h4>
-              <p class="project-tile-text">The site I built for my own wedding.</p>
-              <ul>
-                <li>Responsive Flexbox layout</li>
-                <li>Embedded Pinterest registry</li>
-              </ul>
-              <a href="https://julieandgerard.com/" class="btn-light" target="_blank">View project <i class="fas fa-external-link-alt"></i></a>
-              <a href="https://github.com/GK-Hynes/wedding-site" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-tile">
-            <div class="project-tile-top">
-              <a href="https://gk-hynes.github.io/mairtin-o-cadhain-tribute-page/" target="_blank">
-                <img src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1518818822/Screenshot-2018-2-16_Mairt%C3%ADn_%C3%93_Cadhain_zjmkfc.png"
-                  alt="Máirtín Ó Cadhain Tribute Page">
-              </a>
-            </div>
-            <div class="project-tile-body">
-              <h4 class="project-tile-title">Máirtín Ó Cadhain Tribute Page</h4>
-              <p class="project-tile-text">A tribute page to the greatest modern Irish-language author.</p>
-              <ul>
-                <li>Responsive Bootstrap 4 layout</li>
-              </ul>
-              <a href="https://gk-hynes.github.io/mairtin-o-cadhain-tribute-page/" class="btn-light" target="_blank">View
-                project <i class="fas fa-external-link-alt"></i></a>
-              <a href="https://github.com/GK-Hynes/mairtin-o-cadhain-tribute-page" class="btn-dark" target="_blank">Github
-                <i class="fab fa-github"></i></a>
-            </div>
-          </div>
-
-        </div>
       </div>
     </div>
+
+    <div class="javascript-and-api-projects">
+      <h4 class="projects-heading heading-tertiary">JavaScript and APIs</h4>
+      <div class="projects">
+
+        <div class="project-tile">
+          <div class="project-tile__top">
+            <a href="https://gk-hynes.github.io/d3-data-dashboard/" target="_blank">
+              <img class="project-tile__img" src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1544967545/Screenshot_2018-12-16_D3_Data_Dashboard_n1j218.png"
+                alt="D3.js Data Dashboard">
+            </a>
+          </div>
+          <div class="project-tile__body">
+            <h4 class="project-tile__title">D3.js Data Dashboard</h4>
+            <p class="project-tile__text">A dashboard showing CO2 emissions per country, built in D3.js.</p>
+            <ul class="project-tile__list">
+              <li>Interactive map using GeoJSON</li>
+              <li>Dynamic graphs</li>
+              <li>Custom tooltips</li>
+              <li>Data from UNData</li>
+            </ul>
+            <a href="https://gk-hynes.github.io/d3-data-dashboard/" class="btn-light" target="_blank">View project <i
+                class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/GK-Hynes/d3-data-dashboard" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <div class="project-tile__top">
+            <a href="https://gk-hynes.github.io/weatherjs/" target="_blank">
+              <img class="project-tile__img" src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1531174245/Screenshot_2018-07-09_WeatherJS_pzszlx.png"
+                alt="Weather App">
+            </a>
+          </div>
+          <div class="project-tile__body">
+            <h4 class="project-tile__title">Weather App</h4>
+            <p class="project-tile__text">An interactive weather app using the OpenWeatherMap API.</p>
+            <ul class="project-tile__list">
+              <li>Uses Fetch API</li>
+              <li>Uses ES6 classes and async functions</li>
+              <li>Location saved to LocalStorage</li>
+              <li>Custom Bootswatch theme</li>
+            </ul>
+            <a href="https://gk-hynes.github.io/weatherjs/" class="btn-light" target="_blank">View project <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/GK-Hynes/weatherjs" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <div class="project-tile__top">
+            <a href="https://gk-hynes.github.io/github-finder/" target="_blank">
+              <img class="project-tile__img" src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1544967629/Screenshot_2018-12-16_GitHub_Finder_ctbpda.png"
+                alt="Github Profile Finder">
+            </a>
+          </div>
+          <div class="project-tile__body">
+            <h4 class="project-tile__title">Github Profile Finder</h4>
+            <p class="project-tile__text">An app that uses the Github API to fetch and display user profiles and repo
+              information.</p>
+            <ul class="project-tile__list">
+              <li>Organized, modular code</li>
+              <li>Uses ES2017 (Async + Await)</li>
+              <li>Uses Fetch API</li>
+              <li>Styled with Bootstrap 4</li>
+            </ul>
+            <a href="https://gk-hynes.github.io/github-finder/" class="btn-light" target="_blank">View project <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/GK-Hynes/github-finder" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <div class="project-tile__top">
+            <a href="https://gk-hynes.github.io/tracalorie/" target="_blank">
+              <img class="project-tile__img" src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1534617447/Screenshot_2018-08-18_Tracalorie_Meal_Calorie_Tracker_zybwy5.png"
+                alt="Tracalorie App">
+            </a>
+          </div>
+          <div class="project-tile__body">
+            <h4 class="project-tile__title">Tracalorie</h4>
+            <p class="project-tile__text">A calorie and meal tracking app.</p>
+            <ul class="project-tile__list">
+              <li>Uses ES6 classes</li>
+              <li>Uses the module pattern</li>
+              <li>Data saved to LocalStorage</li>
+              <li>Styled with Materialize CSS</li>
+            </ul>
+            <a href="https://gk-hynes.github.io/tracalorie/" class="btn-light" target="_blank">View project <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/GK-Hynes/tracalorie" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="web-design-projects">
+      <h4 class="projects-heading heading-tertiary">Responsive Web Design</h4>
+      <div class="projects">
+
+        <div class="project-tile">
+          <div class="project-tile__top">
+            <a href="https://gk-hynes.github.io/fcc-landing-page/" target="_blank">
+              <img class="project-tile__img" src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1547762584/Screenshot_2019-01-17_K2_Language_School_bwtfw2.png"
+                alt="K2 Language School">
+            </a>
+          </div>
+          <div class="project-tile__body">
+            <h4 class="project-tile__title">K2 Language School</h4>
+            <p class="project-tile__text">A landing page for a fictional Dublin-based language school.</p>
+            <ul class="project-tile__list">
+              <li>Responsive Flexbox layout</li>
+              <li>Ebedded video and map</li>
+            </ul>
+            <a href="https://gk-hynes.github.io/fcc-landing-page/" class="btn-light" target="_blank">View project <i
+                class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/GK-Hynes/fcc-landing-page" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-tile">
+          <div class="project-tile__top">
+            <a href="https://gk-hynes.github.io/technical-documentation/" target="_blank">
+              <img class="project-tile__img" src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1547762620/Screenshot_2019-01-17_CSS_Technical_Docs_nnhlqh.png"
+                alt="CSS Technical Documentation">
+            </a>
+          </div>
+          <div class="project-tile__body">
+            <h4 class="project-tile__title">CSS Technical Documentation</h4>
+            <p class="project-tile__text">A page created to practise and explain the box model and CSS positioning.</p>
+            <ul class="project-tile__list">
+              <li>Responsive design without floats, Flexbox or Grid</li>
+            </ul>
+            <a href="https://gk-hynes.github.io/technical-documentation/" class="btn-light" target="_blank">View
+              project <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/GK-Hynes/technical-documentation" class="btn-dark" target="_blank">Github <i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-tile">
+          <div class="project-tile__top">
+            <a href="https://gk-hynes.github.io/fcc-survey-form/" target="_blank">
+              <img class="project-tile__img" src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1547762602/Screenshot_2019-01-17_freeCodeCamp_Survey_Form_tb2hly.png"
+                alt="Material Design Survey Form">
+            </a>
+          </div>
+          <div class="project-tile__body">
+            <h4 class="project-tile__title">Material Design Survey Form</h4>
+            <p class="project-tile__text">A responsive form based off Material Design principles.</p>
+            <ul class="project-tile__list">
+              <li>Accessible custom inputs and styles</li>
+              <li>No CSS frameworks</li>
+            </ul>
+            <a href="https://gk-hynes.github.io/fcc-survey-form/" class="btn-light" target="_blank">View
+              project <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/GK-Hynes/fcc-survey-form" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-tile">
+          <div class="project-tile__top">
+            <a href="https://julieandgerard.com/" target="_blank">
+              <img class="project-tile__img" src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1547396210/Screenshot_2019-01-13_Julie_and_Gerard_s_Wedding_mboz2u.png"
+                alt="Wedding Site">
+            </a>
+          </div>
+          <div class="project-tile__body">
+            <h4 class="project-tile__title">Wedding Site</h4>
+            <p class="project-tile__text">The site I built for my own wedding.</p>
+            <ul class="project-tile__list">
+              <li>Responsive Flexbox layout</li>
+              <li>Embedded Pinterest registry</li>
+            </ul>
+            <a href="https://julieandgerard.com/" class="btn-light" target="_blank">View project <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/GK-Hynes/wedding-site" class="btn-dark" target="_blank">Github <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-tile">
+          <div class="project-tile__top">
+            <a href="https://gk-hynes.github.io/mairtin-o-cadhain-tribute-page/" target="_blank">
+              <img class="project-tile__img" src="https://res.cloudinary.com/gerhynes/image/upload/q_auto/v1518818822/Screenshot-2018-2-16_Mairt%C3%ADn_%C3%93_Cadhain_zjmkfc.png"
+                alt="Máirtín Ó Cadhain Tribute Page">
+            </a>
+          </div>
+          <div class="project-tile__body">
+            <h4 class="project-tile__title">Máirtín Ó Cadhain Tribute Page</h4>
+            <p class="project-tile__text">A tribute page to the greatest modern Irish-language author.</p>
+            <ul class="project-tile__list">
+              <li>Responsive Bootstrap 4 layout</li>
+            </ul>
+            <a href="https://gk-hynes.github.io/mairtin-o-cadhain-tribute-page/" class="btn-light" target="_blank">View
+              project <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/GK-Hynes/mairtin-o-cadhain-tribute-page" class="btn-dark" target="_blank">Github
+              <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </section>
 
   <section id="contact">
-    <h2 class="md-heading contact-heading">Contact Me</h2>
+    <h2 class="heading-md contact-heading">Contact Me</h2>
     <h3 class="contact-heading-secondary">Get in touch through any of the following</h3>
     <div class="icons contact-icons">
       <a href="https://twitter.com/Gerard_K_Hynes" target="_blank">
