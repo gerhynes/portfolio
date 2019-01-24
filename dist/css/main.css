@@ -181,20 +181,20 @@ header {
           transform: scale(1.1);
           transition: all 0.5s ease-out; }
 
-#projects {
+.projects-gallery {
   width: 100%;
   min-height: 100vh;
   padding: 2rem; }
-  #projects .projects-heading,
-  #projects .projects-heading-secondary {
+  .projects-gallery .projects-heading,
+  .projects-gallery .projects-heading-secondary {
     text-align: center;
     margin-top: 1rem; }
-  #projects .heading-tertiary {
+  .projects-gallery .heading-tertiary {
     font-size: 1.7rem;
     padding-bottom: 1.5rem; }
-  #projects .projects {
+  .projects-gallery .projects {
     display: block; }
-    #projects .projects .project-tile {
+    .projects-gallery .projects .project-tile {
       max-width: 400px;
       margin: 0 auto 3rem auto;
       margin-bottom: 3rem;
@@ -202,19 +202,19 @@ header {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
       border-radius: 5px;
       transition: all 0.5s ease-out; }
-      #projects .projects .project-tile-body {
+      .projects-gallery .projects .project-tile__body {
         padding: 1rem 1rem 1rem 1.5rem; }
-      #projects .projects .project-tile-title, #projects .projects .project-tile-text {
+      .projects-gallery .projects .project-tile__title, .projects-gallery .projects .project-tile__text {
         padding-bottom: 0.5rem; }
-      #projects .projects .project-tile:hover {
+      .projects-gallery .projects .project-tile:hover {
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); }
-      #projects .projects .project-tile img {
+      .projects-gallery .projects .project-tile__img {
         width: 100%;
         height: auto;
         border-radius: 5px 5px 0 0; }
-      #projects .projects .project-tile ul {
+      .projects-gallery .projects .project-tile__list {
         padding-bottom: 1rem; }
-        #projects .projects .project-tile ul li::before {
+        .projects-gallery .projects .project-tile__list li::before {
           content: "";
           display: inline-block;
           background: #adb5bd;
@@ -222,8 +222,8 @@ header {
           height: 0.75rem;
           border-radius: 50%;
           margin-right: 0.5rem; }
-  #projects .web-apps {
-    display: flex; }
+    .projects-gallery .projects.web-apps {
+      display: flex; }
 
 .btn, .btn-dark, .btn-light {
   display: inline-block;
@@ -408,9 +408,7 @@ header {
     .landing__heading {
       margin-top: 20vh;
       line-height: 1;
-      margin-bottom: 1rem; }
-  #projects .projects.web-apps {
-    display: flex; } }
+      margin-bottom: 1rem; } }
 
 @media screen and (min-width: 768px) {
   .menu-nav, .menu-branding {
@@ -438,7 +436,7 @@ header {
     .about__info {
       grid-template-areas: "about-heading about-heading" "bioimage bio" "skills-heading skills-heading" "skill-1 icons-1" "icons-2 skill-2" "skill-3 icons-3";
       grid-template-columns: repeat(2, 1fr); }
-  #projects .projects {
+  .projects-gallery .projects {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr); } }
@@ -448,5 +446,5 @@ header {
     padding: 4rem; }
     .about .skill__content {
       width: 60%; }
-  #projects .projects {
+  .projects-gallery .projects {
     grid-template-columns: repeat(3, 1fr); } }

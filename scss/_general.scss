@@ -269,7 +269,7 @@ header {
 
 // Projects section
 
-#projects {
+.projects-gallery {
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
@@ -297,12 +297,12 @@ header {
       border-radius: 5px;
       @include easeOut;
 
-      &-body {
+      &__body {
         padding: 1rem 1rem 1rem 1.5rem;
       }
 
-      &-title,
-      &-text {
+      &__title,
+      &__text {
         padding-bottom: 0.5rem;
       }
 
@@ -310,13 +310,13 @@ header {
         box-shadow: $box-shadow-active;
       }
 
-      img {
+      &__img {
         width: 100%;
         height: auto;
         border-radius: 5px 5px 0 0;
       }
 
-      ul {
+      &__list {
         padding-bottom: 1rem;
 
         li::before {
@@ -330,10 +330,9 @@ header {
         }
       }
     }
-  }
-
-  .web-apps {
-    display: flex;
+    &.web-apps {
+      display: flex;
+    }
   }
 }
 
