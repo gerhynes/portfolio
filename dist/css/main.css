@@ -17,20 +17,20 @@ h2,
 h3,
 h4 {
   font-weight: 400; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading,
-  h4.lg-heading {
+  h1.heading--lg,
+  h2.heading--lg,
+  h3.heading--lg,
+  h4.heading--lg {
     font-size: 6rem; }
-  h1.md-heading,
-  h2.md-heading,
-  h3.md-heading,
-  h4.md-heading {
+  h1.heading--md,
+  h2.heading--md,
+  h3.heading--md,
+  h4.heading--md {
     font-size: 4.5rem; }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading,
-  h4.sm-heading {
+  h1.heading--sm,
+  h2.heading--sm,
+  h3.heading--sm,
+  h4.heading--sm {
     margin-bottom: 2rem; }
 
 h3 {
@@ -71,21 +71,21 @@ header {
     height: 100%;
     background: rgba(68, 68, 68, 0.7); }
 
-main {
+.landing {
   color: #fff;
   padding: 4rem 2rem;
   width: 100%;
   height: 100vh;
   text-align: center;
   z-index: 2; }
-  main .icons {
+  .landing__icons {
     margin-top: 1rem; }
-    main .icons a {
+    .landing__icons .landing__link {
       padding: 0.4rem; }
-      main .icons a:hover {
+      .landing__icons .landing__link:hover {
         color: #d59541;
         transition: all 0.5s ease-out; }
-  main#welcome-section h1 {
+  .landing__heading {
     margin-top: 10vh; }
 
 #about {
@@ -403,9 +403,9 @@ main {
   transition-delay: 0.4s; }
 
 @media screen and (min-width: 576px) {
-  #welcome-section {
+  .landing {
     padding: 4rem; }
-    #welcome-section .lg-heading {
+    .landing__heading {
       margin-top: 20vh;
       line-height: 1;
       margin-bottom: 1rem; }
@@ -430,7 +430,7 @@ main {
       background: url(../img/elmer-riggs.jpg); }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0); }
-  #welcome-section .lg-heading {
+  .landing__heading {
     line-height: 1.5;
     margin-bottom: 0; }
   #about {

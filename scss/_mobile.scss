@@ -1,9 +1,9 @@
 // Tablets and small laptops
 @include mediaSm {
-  #welcome-section {
+  .landing {
     padding: 4rem;
 
-    .lg-heading {
+    &__heading {
       margin-top: 20vh;
       line-height: 1;
       margin-bottom: 1rem;
@@ -48,9 +48,11 @@
     }
   }
 
-  #welcome-section .lg-heading {
-    line-height: 1.5;
-    margin-bottom: 0;
+  .landing {
+    &__heading {
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
   }
 
   #about {

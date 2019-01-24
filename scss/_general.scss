@@ -23,15 +23,15 @@ h3,
 h4 {
   font-weight: 400;
 
-  &.lg-heading {
+  &.heading--lg {
     font-size: 6rem;
   }
 
-  &.md-heading {
+  &.heading--md {
     font-size: 4.5rem;
   }
 
-  &.sm-heading {
+  &.heading--sm {
     margin-bottom: 2rem;
   }
 }
@@ -84,7 +84,7 @@ header {
   }
 }
 
-main {
+.landing {
   color: set-text-color($primary-color);
   padding: 4rem 2rem;
   width: 100%;
@@ -92,10 +92,10 @@ main {
   text-align: center;
   z-index: 2;
 
-  .icons {
+  &__icons {
     margin-top: 1rem;
 
-    a {
+    .landing__link {
       padding: 0.4rem;
 
       &:hover {
@@ -105,7 +105,7 @@ main {
     }
   }
 
-  &#welcome-section h1 {
+  &__heading {
     margin-top: 10vh;
   }
 }
