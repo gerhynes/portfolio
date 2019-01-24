@@ -55,9 +55,9 @@
     }
   }
 
-  #about {
+  .about {
     padding: 4rem;
-    .about-info {
+    &__info {
       grid-template-areas:
         "about-heading about-heading"
         "bioimage bio"
@@ -77,10 +77,10 @@
 
 // Widescreens
 @include mediaLg {
-  #about {
+  .about {
     padding: 4rem;
 
-    .about-info .skill .skill-content {
+    .skill__content {
       width: 60%;
     }
   }
