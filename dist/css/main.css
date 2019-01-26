@@ -323,21 +323,21 @@ header {
   right: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
-  .menu-btn .menu-btn__line {
+  .menu-btn__line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
-    .menu-btn .menu-btn__line.dark {
+    .menu-btn__line.dark {
       background: #21252a; }
-  .menu-btn .close {
+  .menu-btn.close {
     transform: rotate(180deg); }
-    .menu-btn .close .menu-btn__line:nth-child(1) {
+    .menu-btn.close .menu-btn__line:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn .close .menu-btn__line:nth-child(2) {
+    .menu-btn.close .menu-btn__line:nth-child(2) {
       opacity: 0; }
-    .menu-btn .close .menu-btn__line:nth-child(3) {
+    .menu-btn.close .menu-btn__line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
 
 .menu {

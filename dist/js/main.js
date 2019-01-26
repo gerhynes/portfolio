@@ -1,10 +1,10 @@
 // Select DOM items
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
-const menuBranding = document.querySelector(".menu-branding");
-const menuNav = document.querySelector(".menu-nav");
-const navItems = document.querySelectorAll(".nav-item");
-const btnLine = document.querySelectorAll(".btn-line");
+const menuBranding = document.querySelector(".menu__branding");
+const menuNav = document.querySelector(".menu__nav");
+const navItems = document.querySelectorAll(".menu__nav-item");
+const btnLine = document.querySelectorAll(".menu-btn__line");
 const about = document.querySelector("#about");
 const topOfAbout = about.offsetTop;
 
