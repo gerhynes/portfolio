@@ -369,21 +369,21 @@ header {
   }
 }
 
-#contact {
+.contact {
   width: 100%;
   padding: 2rem;
   min-height: calc(100vh - 60px);
 
-  .contact-heading {
+  .contact__heading {
     margin: 2rem;
     text-align: center;
   }
 
-  .contact-heading-secondary {
-    @extend .contact-heading;
+  .contact__heading--secondary {
+    @extend .contact__heading;
   }
 
-  .contact-icons {
+  .contact__icons {
     text-align: center;
     margin: 1rem;
 
@@ -433,7 +433,7 @@ header {
   }
 }
 
-#main-footer {
+.footer {
   height: 60px;
   padding: 1rem;
   background: $grey900;

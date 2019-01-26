@@ -246,42 +246,42 @@ header {
   .btn-light:hover {
     background: #1a4971; }
 
-#contact {
+.contact {
   width: 100%;
   padding: 2rem;
   min-height: calc(100vh - 60px); }
-  #contact .contact-heading, #contact .contact-heading-secondary {
+  .contact .contact__heading, .contact .contact__heading--secondary {
     margin: 2rem;
     text-align: center; }
-  #contact .contact-icons {
+  .contact .contact__icons {
     text-align: center;
     margin: 1rem; }
-    #contact .contact-icons i {
+    .contact .contact__icons i {
       margin: 1rem;
       padding: 2.5rem;
       border-radius: 50%; }
-      #contact .contact-icons i.fa-twitter {
+      .contact .contact__icons i.fa-twitter {
         background: #1da1f2; }
-        #contact .contact-icons i.fa-twitter:hover {
+        .contact .contact__icons i.fa-twitter:hover {
           color: #1da1f2; }
-      #contact .contact-icons i.fa-linkedin {
+      .contact .contact__icons i.fa-linkedin {
         background: #007bb5; }
-        #contact .contact-icons i.fa-linkedin:hover {
+        .contact .contact__icons i.fa-linkedin:hover {
           color: #007bb5; }
-      #contact .contact-icons i.fa-github {
+      .contact .contact__icons i.fa-github {
         background: #12283a; }
-        #contact .contact-icons i.fa-github:hover {
+        .contact .contact__icons i.fa-github:hover {
           color: #12283a; }
-      #contact .contact-icons i.fa-envelope {
+      .contact .contact__icons i.fa-envelope {
         background: #ea4335; }
-        #contact .contact-icons i.fa-envelope:hover {
+        .contact .contact__icons i.fa-envelope:hover {
           color: #ea4335; }
-      #contact .contact-icons i:hover {
+      .contact .contact__icons i:hover {
         transform: scale(1.1);
         background: #e9ecee;
         transition: all 0.5s ease-out; }
 
-#main-footer {
+.footer {
   height: 60px;
   padding: 1rem;
   background: #343a40;
