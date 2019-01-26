@@ -14,8 +14,8 @@
 // Desktops and laptops
 @include mediaMd {
   .menu {
-    &-nav,
-    &-branding {
+    &__nav,
+    &__branding {
       float: left;
       width: 50%;
       height: 100vh;
@@ -26,11 +26,11 @@
       }
     }
 
-    &-nav {
+    &__nav {
       transform: translate3d(0, -100%, 0);
     }
 
-    &-branding {
+    &__branding {
       transform: translate3d(0, 100%, 0);
 
       .portrait {
@@ -39,7 +39,7 @@
         background: url(https://res.cloudinary.com/gerhynes/image/upload/e_grayscale/v1548518469/portrait_jqq3ud.jpg);
       }
     }
-    .nav-item {
+    &__nav-item {
       transform: translate3d(600px, 0, 0);
     }
   }

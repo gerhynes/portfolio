@@ -43,7 +43,7 @@
   cursor: pointer;
   @include easeOut;
 
-  .btn-line {
+  .menu-btn__line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
@@ -56,10 +56,10 @@
   }
 
   // Rotate into X with menu lines
-  &.close {
+  .close {
     transform: rotate(180deg);
 
-    .btn-line {
+    .menu-btn__line {
       // Line 1 - Rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
@@ -87,8 +87,8 @@
     visibility: visible;
   }
 
-  &-branding,
-  &-nav {
+  &__branding,
+  &__nav {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -102,7 +102,7 @@
     }
   }
 
-  &-nav {
+  &__nav {
     background: rgba(darken($primary-color, 5), 0.9);
     height: 75vh;
     font-size: 24px;
@@ -111,7 +111,7 @@
   }
 
   // Branding side
-  &-branding {
+  &__branding {
     background: rgba($primary-color, 0.9);
     height: 25vh;
     transform: translate3d(100%, 0, 0);
@@ -125,7 +125,7 @@
     }
   }
 
-  .nav-item {
+  &__nav-item {
     transform: translate3d(-600px, 0, 0);
     @include easeOut;
 
@@ -135,7 +135,7 @@
     }
   }
 
-  .nav-link {
+  &__nav-link {
     display: inline-block;
     font-size: 30px;
     text-transform: uppercase;
@@ -153,7 +153,7 @@
 
 // Delay each nav item by 0.1s
 @for $x from 1 through 4 {
-  .nav-item:nth-child(#{$x}) {
+  .menu__nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
 }
