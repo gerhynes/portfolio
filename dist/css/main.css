@@ -1,4 +1,118 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+#navbar {
+  position: fixed;
+  width: 100%;
+  height: auto; }
+  #navbar a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999; }
+    #navbar a.skip-main:focus, #navbar a.skip-main:active {
+      color: #fff;
+      background-color: #000;
+      left: auto;
+      top: auto;
+      width: 30%;
+      height: auto;
+      overflow: auto;
+      margin: 10px 35%;
+      padding: 5px;
+      border-radius: 15px;
+      border: 4px solid yellow;
+      text-align: center;
+      font-size: 1.2rem;
+      z-index: 999; }
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  top: 35px;
+  right: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  .menu-btn__line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 0.5s ease-out; }
+    .menu-btn__line.dark {
+      background: #21252a; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .menu-btn__line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .menu-btn__line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .menu-btn__line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu__branding, .menu__nav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 0;
+    transition: all 0.5s ease-out; }
+    .menu__branding.show, .menu__nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu__nav {
+    background: rgba(55, 55, 55, 0.9);
+    height: 75vh;
+    font-size: 24px;
+    list-style: none;
+    transform: translate3d(-100%, 0, 0); }
+  .menu__branding {
+    background: rgba(68, 68, 68, 0.9);
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu__branding .portrait {
+      background: url(https://res.cloudinary.com/gerhynes/image/upload/e_grayscale/v1548518477/portrait-small_h2iui1.jpg);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #d59541; }
+  .menu__nav-item {
+    transform: translate3d(-600px, 0, 0);
+    transition: all 0.5s ease-out; }
+    .menu__nav-item.show {
+      transform: translate3d(0, 0, 0); }
+  .menu__nav-link {
+    display: inline-block;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease-out; }
+    .menu__nav-link:hover {
+      color: #d59541; }
+
+.menu__nav-item:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.menu__nav-item:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.menu__nav-item:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.menu__nav-item:nth-child(4) {
+  transition-delay: 0.4s; }
+
 *,
 *::before,
 *::after {
@@ -287,120 +401,6 @@ header {
   background: #343a40;
   color: #fff;
   text-align: center; }
-
-#navbar {
-  position: fixed;
-  width: 100%;
-  height: auto; }
-  #navbar a.skip-main {
-    left: -999px;
-    position: absolute;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    z-index: -999; }
-    #navbar a.skip-main:focus, #navbar a.skip-main:active {
-      color: #fff;
-      background-color: #000;
-      left: auto;
-      top: auto;
-      width: 30%;
-      height: auto;
-      overflow: auto;
-      margin: 10px 35%;
-      padding: 5px;
-      border-radius: 15px;
-      border: 4px solid yellow;
-      text-align: center;
-      font-size: 1.2rem;
-      z-index: 999; }
-
-.menu-btn {
-  position: absolute;
-  z-index: 3;
-  top: 35px;
-  right: 35px;
-  cursor: pointer;
-  transition: all 0.5s ease-out; }
-  .menu-btn__line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: #fff;
-    transition: all 0.5s ease-out; }
-    .menu-btn__line.dark {
-      background: #21252a; }
-  .menu-btn.close {
-    transform: rotate(180deg); }
-    .menu-btn.close .menu-btn__line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .menu-btn__line:nth-child(2) {
-      opacity: 0; }
-    .menu-btn.close .menu-btn__line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
-
-.menu {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  visibility: hidden; }
-  .menu.show {
-    visibility: visible; }
-  .menu__branding, .menu__nav {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 0;
-    transition: all 0.5s ease-out; }
-    .menu__branding.show, .menu__nav.show {
-      transform: translate3d(0, 0, 0); }
-  .menu__nav {
-    background: rgba(55, 55, 55, 0.9);
-    height: 75vh;
-    font-size: 24px;
-    list-style: none;
-    transform: translate3d(-100%, 0, 0); }
-  .menu__branding {
-    background: rgba(68, 68, 68, 0.9);
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu__branding .portrait {
-      background: url(https://res.cloudinary.com/gerhynes/image/upload/e_grayscale/v1548518477/portrait-small_h2iui1.jpg);
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 3px solid #d59541; }
-  .menu__nav-item {
-    transform: translate3d(-600px, 0, 0);
-    transition: all 0.5s ease-out; }
-    .menu__nav-item.show {
-      transform: translate3d(0, 0, 0); }
-  .menu__nav-link {
-    display: inline-block;
-    font-size: 30px;
-    text-transform: uppercase;
-    padding: 1rem 0;
-    font-weight: 300;
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.5s ease-out; }
-    .menu__nav-link:hover {
-      color: #d59541; }
-
-.menu__nav-item:nth-child(1) {
-  transition-delay: 0.1s; }
-
-.menu__nav-item:nth-child(2) {
-  transition-delay: 0.2s; }
-
-.menu__nav-item:nth-child(3) {
-  transition-delay: 0.3s; }
-
-.menu__nav-item:nth-child(4) {
-  transition-delay: 0.4s; }
 
 @media screen and (min-width: 576px) {
   .landing {
