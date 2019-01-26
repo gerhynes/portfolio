@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
-#navbar {
+.skip-btn {
   position: fixed;
   width: 100%;
   height: auto; }
-  #navbar a.skip-main {
+  .skip-btn a.skip-main {
     left: -999px;
     position: absolute;
     top: auto;
@@ -11,7 +11,7 @@
     height: 1px;
     overflow: hidden;
     z-index: -999; }
-    #navbar a.skip-main:focus, #navbar a.skip-main:active {
+    .skip-btn a.skip-main:focus, .skip-btn a.skip-main:active {
       color: #fff;
       background-color: #000;
       left: auto;
